@@ -1,0 +1,47 @@
+form {
+    position: relative;
+    top: 15rem;
+}
+
+button{
+    position: relative;
+    /* top: 16rem; */
+    padding: 0.9rem;  
+    margin: 0.5rem;
+    width: 20%;
+    vertical-align:middle;
+    text-align: center;
+    border: 0rem solid;
+    border-radius: 200px;
+    /* border-color: var(--grayDark); */
+    overflow: hidden;
+    background-color:  var(--grayCommon);
+    /* color: black; */
+    /* margin: 1rem; */
+    font-size: x-large;
+    color: white;
+
+  }
+
+
+label {
+    position: relative;
+   float: center; 
+   /* top: 15rem; */
+}
+
+label input{
+    background-color: var(--grayLight);
+
+    width: 25%;
+    font-size: x-large;
+    color: white;
+}
+
+label p{
+    font-size: x-large;
+    padding: 0%;
+    margin: 0.3rem;
+    /* padding-right: 10rem; */
+
+}

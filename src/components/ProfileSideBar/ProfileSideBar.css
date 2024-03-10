@@ -1,0 +1,69 @@
+:root{
+  --grayLight: rgb(117, 117, 117);
+  --grayCommon: rgb(70, 70, 70);
+  --grayMid: rgb(49, 49, 49);
+  --grayDark: rgb(27, 27, 27);
+}
+
+
+.p_sidebar {
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    height: 10%;
+    /* background-image: url("aedcca77-ccf1-4e80-80e9-6efc13a35c90.png"); */
+    background-color: var(--grayLight);
+    margin: 0px;
+    padding: 0px;   
+    top: 0;
+    bottom: 0;
+  }
+
+  .p_sidebarElement{
+    position: sticky;
+    width: 10%;
+    float: left;
+  }
+  
+  .p_sidebar button{
+    height: 75%;
+    top: 0px;
+    padding: 0.9rem;  
+    margin: 0.5rem;
+    vertical-align:middle;
+    text-align: center;
+    border: 0rem solid;
+    border-radius: 200px;
+    /* border-color: var(--grayDark); */
+    overflow: hidden;
+    background-color:  var(--grayCommon);
+    /* color: black; */
+    /* margin: 1rem; */
+    font-size: x-large;
+
+  }
+
+  .p_sidebar img{
+    width: 9%;
+
+    /* vertical-align: top; */
+    /* vertical-align:middle; */
+    /* position: relative; */
+  }
+
+  .p_sidebar #login{
+    width: 7%;
+    float: right;
+  }
+
+  #HP{
+    float: right;
+    top: 2rem;
+
+    width: 20%;
+    /* height: 100px; */
+  }
+  
+  .p_sidebar button:hover {
+    background-color: var(--grayMid);
+  }
