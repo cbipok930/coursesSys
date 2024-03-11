@@ -1,9 +1,9 @@
-form {
+form.login {
     position: relative;
     top: 15rem;
 }
 
-button{
+form.login button{
     position: relative;
     /* top: 16rem; */
     padding: 0.9rem;  
@@ -24,13 +24,13 @@ button{
   }
 
 
-label {
+  form.login label {
     position: relative;
    float: center; 
    /* top: 15rem; */
 }
 
-label input{
+form.login label input{
     background-color: var(--grayLight);
 
     width: 25%;
@@ -38,7 +38,7 @@ label input{
     color: white;
 }
 
-label p{
+form.login label p{
     font-size: x-large;
     padding: 0%;
     margin: 0.3rem;

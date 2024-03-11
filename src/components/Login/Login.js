@@ -27,7 +27,7 @@ export default function Login({ setToken }) {
       }
     
   return(
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className='login'>
       <label>
         <p>Имя</p>
         <input type="text" onChange={e => setUserName(e.target.value)} />

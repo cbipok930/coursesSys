@@ -21,7 +21,7 @@
 
   .p_sidebarElement{
     position: sticky;
-    width: 10%;
+    width: 11%;
     float: left;
   }
   
@@ -52,13 +52,19 @@
   }
 
   .p_sidebar #login{
-    width: 7%;
+    width: 9%;
     float: right;
   }
 
-  #HP{
+  #p_BARS_LBLS{
     float: right;
-    top: 2rem;
+    top: 1rem;
+
+    width: auto;
+  }
+  #p_BARS{
+    float: right;
+    top: 0.25rem;
 
     width: 20%;
     /* height: 100px; */

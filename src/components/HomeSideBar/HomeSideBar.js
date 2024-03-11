@@ -6,10 +6,15 @@ import Login from '../Login/Login';
 export default function HomeSideBar() {
     var token = sessionStorage.getItem("token")
     var profileButton;
-    if (token)
-      profileButton = <>профиль</>
-    else
-      profileButton = <>вход</>
+    var linkTo;
+    if (token){
+      linkTo = `/${token}`;
+      profileButton = <>профиль</>;
+    }
+    else{
+      linkTo = "/login";
+      profileButton = <>вход</>;
+    }
     return (
       <div className="sidebar">
         <img className="sidebarElement" src={logo} alt="logo"></img>
@@ -19,7 +24,7 @@ export default function HomeSideBar() {
       {/* <br/> */}
       <Link to="/train"><button className="sidebarElement">тренажер</button></Link>
       {/* <br/> */}
-      <Link to="/profile"><button className="sidebarElement" id="login">{profileButton}</button></Link>
+      <Link to={linkTo}><button className="sidebarElement" id="login">{profileButton}</button></Link>
       {/* <br/>
       <Link to="/stop"><button>Stop</button></Link>
       <br/>*/}

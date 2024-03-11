@@ -26,7 +26,14 @@ function App() {
     console.log("asdasd");
     window.location.replace("http://10.9.54.200:3000");
   }
-  // var token = sessionStorage.getItem("token")
+  var token = sessionStorage.getItem("token")
+  var linkTo;
+  if (token){
+    linkTo = `/${token}`;
+  }
+  else{
+    linkTo = "/login";
+  }
   // console.log(token);
   // if(!token) {
   //   return <Login setToken={setToken} />
@@ -41,7 +48,8 @@ function App() {
         <Routes>
           <Route index element={<Home />} /> 
           <Route path="/home" element={<Home />} />
-          <Route path="/profile" element={<Profile />} />
+          <Route path="/login" element={<Profile />} />
+          <Route path={linkTo} element={<Profile />} />
           <Route path='*' element={<NoPage></NoPage>} />
         </Routes>
       </div>
